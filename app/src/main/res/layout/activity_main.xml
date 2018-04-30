@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:background="@drawable/texture_blue1">
+
+
+
+
+    <fragment
+        android:id="@+id/fragmentTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="affwl.com.pppoker.HeaderMenu"
+        android:layout_alignParentTop="true"
+        tools:layout="@layout/fragment_header_menu"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        class = "affwl.com.pppoker.HeaderMenu"/>
+
+    <LinearLayout
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/fragmentTop"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/bag"
+            android:background="@drawable/round_background"
+            android:layout_marginRight="15dp"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/question"
+            android:background="@drawable/round_background"
+            android:layout_marginRight="15dp"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/gift"
+            android:background="@drawable/round_background"
+            android:layout_marginRight="15dp"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/inbox"
+            android:background="@drawable/round_background"
+            android:layout_marginRight="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llOuterSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_menu"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/add_user_32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="5dp"
+            android:text="CLUB"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/search_32" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llChipsImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llOuterSearch"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/poker_chi"
+        android:orientation="horizontal"></LinearLayout>
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragmentBottom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgVPlayNow"
+            android:layout_alignParentLeft="true"
+            android:text="Lobby"
+            android:background="@color/colorTrasparent"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgVPlayNow"
+            android:layout_alignParentLeft="true"
+            android:text="Home"
+            android:background="@color/colorTrasparent"/>
+
+         <ImageView
+             android:id="@+id/imgVMainMenu"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentTop="true"
+             android:adjustViewBounds="true"
+             android:src="@drawable/tab1" />
+
+        <ImageView
+            android:id="@+id/imgVPlayNow"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgVMainMenu"
+            android:layout_alignTop="@+id/imgVMainMenu"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/tab2" />
+    </RelativeLayout>
+
+    <fragment
+        android:name="affwl.com.pppoker.FragmentBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        tools:layout="@layout/fragment_bottom"
+        android:id="@+id/fragmentBottom"/>
+
+    <!--android:id="@+id/bottomBar"-->
+    <!--<com.roughike.bottombar.BottomBar-->
+        <!--android:id="@+id/fragmentBottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="64dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="#FFFFFF"-->
+        <!--app:bb_tabXmlResource="@xml/bottombar_tabs_five"-->
+        <!--app:bb_behavior="shifting"-->
+        <!--app:bb_inActiveTabAlpha="0.3"-->
+        <!--app:bb_inActiveTabColor="@color/colorAccent"-->
+        <!--app:bb_activeTabColor="@color/colorAccent"-->
+        <!--app:bb_titleTypeFace="fonts/GreatVibes-Regular.otf"-->
+        <!--app:bb_titleTextAppearance="@style/CustomTitleTextAppearance"/>-->
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rlMainMenu"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/fragmentBottom"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/llLobbyGobal"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imgVLobby"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:src="@drawable/lobby" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:src="@drawable/untitled1" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignBottom="@+id/llHomegameLeague"-->
+    <!--android:layout_alignTop="@+id/llLobbyGobal"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:adjustViewBounds="true"-->
+
+    <!--android:src="@drawable/earth" />-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/llHomegameLeague"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/llLobbyGobal"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imgVGameHome"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:src="@drawable/home_game" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:adjustViewBounds="true"-->
+
+    <!--android:src="@drawable/league" />-->
+    <!--</LinearLayout>-->
+    <!--</RelativeLayout>-->

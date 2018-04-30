@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PPPoker</string>
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_index">index</string>
+    <string name="title_home">Home</string>
+    <string name="title_notice">NOTICE</string>
+    <string name="title_career">CAREER</string>
+    <string name="title_profile">PROFILE</string>
+    <string name="title_shop">SHOP</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

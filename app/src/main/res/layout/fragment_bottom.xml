@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorGreayDark"
+    android:padding="5dp"
+    tools:context=".FragmentBottom">
+
+    <ImageView
+        android:id="@+id/imgVShop"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:src="@drawable/shop"/>
+
+    <ImageView
+        android:id="@+id/imgVNotice"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:src="@drawable/notice"/>
+
+    <ImageView
+        android:id="@+id/imgVSpades"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:src="@drawable/spades"/>
+
+    <ImageView
+        android:id="@+id/imgVCareer"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:src="@drawable/career"/>
+
+    <ImageView
+        android:id="@+id/imgVProfile"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:src="@drawable/profile"/>
+
+</LinearLayout>
